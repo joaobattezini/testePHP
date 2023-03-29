@@ -11,33 +11,41 @@
                     <div class="modal-body">
                         <div class="row">
                             <div class="col-sm-6">
-                                <div class="form-group form-group-default"><i class="la la-calendar"></i>
-                                    <label>Data da Entrega :</label>
-                                    <input id="txtEntrega" type="date" class="form-control" placeholder="Nome da Propriedade" required>
+                                <div class="form-group">
+                                    <label for="#selCliente">Cliente :</label>
+                                    <select class="form-control" id="selCliente">
+                                    </select>
                                 </div>
                             </div>
                             <div class="col-sm-6">
-                                <div class="form-group form-group-default">
-                                    <label>Local de Entrega :</label>
-                                    <input id="txtLocal" type="text" class="form-control"
-                                        placeholder="Local de Entrega" required>
+                                <div class="form-group form-group-default"><i class="la la-calendar"></i>
+                                    <label>Data da Entrega :</label>
+                                    <input id="txtEntrega" type="date" class="form-control" placeholder="Nome da Propriedade">
                                 </div>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group form-group-default">
+                                    <label>Local de Entrega :</label>
+                                    <input id="txtLocal" type="text" class="form-control"
+                                        placeholder="Local de Entrega" >
+                                </div>
+                            </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="form-group form-group-default">
                                     <label>Valor Pedido :</label>
                                     <input id="txtValor" type="text" class="form-control"
-                                        placeholder="R$ Valor" required>
+                                        placeholder="R$ Valor" >
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group form-group-default">
                                     <label>Valor Frete :</label>
                                     <input id="txtFrete" type="text" class="form-control"
-                                        placeholder="R$ Frete" required>
+                                        placeholder="R$ Frete" >
                                 </div>
                             </div>
                         </div>

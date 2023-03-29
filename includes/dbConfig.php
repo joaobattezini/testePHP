@@ -11,9 +11,9 @@ class dbConfig
     function __construct() {
         // $this -> serverName = 'sql655.main-hosting.eu';
         $this -> serverName = '212.1.211.1';
-        $this -> dbName = 'teste';
-        $this -> userName = 'pecuaria';
-        $this -> passCode = '';
+        $this -> dbName = 'u226798429_agral';
+        $this -> userName = 'u226798429_agral';
+        $this -> passCode = 'AgralCloud.2022';
     }
 }
 

@@ -9,21 +9,9 @@
     <meta name="description" content="Modern admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities with bitcoin dashboard.">
     <meta name="keywords" content="admin template, modern admin template, dashboard template, flat admin template, responsive admin template, web app, crypto dashboard, bitcoin dashboard">
     <meta name="author" content="PIXINVENT">
-    <title>Propriedades</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="apple-touch-icon" href="../../app-assets/images/ico/apple-icon-120.png">
-    <link rel="shortcut icon" type="image/x-icon" href="../../app-assets/images/ico/favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i%7CQuicksand:300,400,500,700" rel="stylesheet">
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="//cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css" />
     <link rel="stylesheet" type="text/css" href="../../app-assets/fonts/material-icons/material-icons.css">
-
-    <!-- BEGIN: Vendor CSS-->
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/material-vendors.min.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/weather-icons/climacons.min.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/fonts/meteocons/style.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/charts/morris.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/charts/chartist.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/charts/chartist-plugin-tooltip.css">
-    <!-- END: Vendor CSS-->
 
     <!-- BEGIN: Theme CSS-->
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/material.css">
@@ -32,15 +20,6 @@
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/material-extended.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/material-colors.css">
     <!-- END: Theme CSS-->
-
-    <!-- BEGIN: Page CSS-->
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/core/menu/menu-types/material-horizontal-menu.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/fonts/simple-line-icons/style.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/core/colors/palette-gradient.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/pages/timeline.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/pages/dashboard-ecommerce.css">
-    <!-- END: Page CSS-->
-
 
 </head>
 <!-- END: Head-->
@@ -123,7 +102,7 @@
                             </div>
                             <div class="card-content">
                                 <div class="table-responsive">
-                                    <table id="idTablePedidos" class="table table-de mb-0">
+                                    <table id="idTablePedidos" class="table table table-striped table-hover">
                                         <thead>
                                             <tr>
                                                 <th>Cliente</th>
@@ -132,6 +111,8 @@
                                                 <th>Valor Frete</th>
                                                 <th>Data de Entrega</th>
                                             </tr>
+                                        </thead>
+                                        <tbody>
                                         </tbody>
                                     </table>
                                 </div>
@@ -140,12 +121,11 @@
                     </div>
                 </div>
                 <!-- Active Orders -->
-
             </div>
         </div>
     </div>
     <!-- END: Content-->
-    <div class="modal fade" id="idModalPedidos" data-idcliente="" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="true"></div>
+    <div class="modal fade" id="idModalPedidos" data-idpedido="" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="true"></div>
 
     <div class="sidenav-overlay"></div>
     <div class="drag-target"></div>
@@ -156,30 +136,17 @@
     </footer>
     <!-- END: Footer-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.4.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+
+
+    <!-- <script src="../app-assets/vendors/js/extensions/toastr.min.js"></script>
+    <script src="../app-assets/js/scripts/extensions/toastr.js"></script> -->
     <script src="../javaScript/pedidos.js"></script>
     <!-- BEGIN: Vendor JS-->
-    <script src="../../app-assets/vendors/js/material-vendors.min.js"></script>
+    <!-- <script src="../../app-assets/vendors/js/material-vendors.min.js"></script> -->
     <!-- BEGIN Vendor JS-->
 
-    <!-- BEGIN: Page Vendor JS-->
-    <script src="../../app-assets/vendors/js/ui/jquery.sticky.js"></script>
-    <script src="../../app-assets/vendors/js/charts/chartist.min.js"></script> 
-    <script src="../../app-assets/vendors/js/charts/chartist-plugin-tooltip.min.js"></script> 
-    <script src="../../app-assets/vendors/js/charts/raphael-min.js"></script>
-    <script src="../../app-assets/vendors/js/charts/morris.min.js"></script>
-    <script src="../../app-assets/vendors/js/timeline/horizontal-timeline.js"></script>
-    <!-- END: Page Vendor JS-->
-
-    <!-- BEGIN: Theme JS-->
-    <!-- <script src="../../app-assets/js/core/app-menu.js"></script>
-    <script src="../../app-assets/js/core/app.js"></script> -->
-    <!-- END: Theme JS-->
-
-    <!-- BEGIN: Page JS-->
-    <!-- <script src="../../app-assets/js/scripts/pages/material-app.js"></script>
-    <script src="../../app-assets/js/scripts/pages/dashboard-ecommerce.js"></script> -->
-    <!-- END: Page JS-->
 
 </body>
 <!-- END: Body-->
@@ -187,3 +154,4 @@
 </html>
 
 
+  
