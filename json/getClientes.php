@@ -13,8 +13,8 @@ $sqlCliente = "SELECT c.id, c.nome
 $result = $mysql->selectFreeRun($sqlCliente);
 while($consulta = mysqli_fetch_array($result)) {
     $arrayCliente[] = array(
-        "idCliente"     => $consulta[id],
-        "nmCliente"    => $consulta[nome]
+        "cliente"     => $consulta[id],
+        "nmcliente"    => $consulta[nome]
     );
 }
 $array ["data"] = $arrayCliente;
